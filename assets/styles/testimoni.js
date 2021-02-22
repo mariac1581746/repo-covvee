@@ -24,3 +24,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+function buyNow() {
+  alert("Covvee belum buka, doain ya semoga buka beneran");
+}

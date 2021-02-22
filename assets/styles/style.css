@@ -195,9 +195,10 @@ aside {
  cursor: pointer;
  background-color: #bd9354;
 }
- .btn-subs {
-  width: 100px;
-  height: 30px;
+
+.btn-subs {
+  width: 150px;
+  height: 50px;
   border-style: none;
   background-color: #85603f;
   border-radius: 30px;
