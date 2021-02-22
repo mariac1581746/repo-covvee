@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+ /* color1 #85603F 
+    color2 #9E7540
+    color3 #BD9354
+    color4 #E3D18A */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 1em 2em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.about {
+  display: inline-block;
+}
+
+#about {
+  float: right;
+  width: 75%;
+  text-align: justify;
+  padding: 20px;
+  /*flex:auto*/
+}
+
+.main {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.nav-page {
+  flex: auto;
+}
+
+header {
+  display: inline;
+}
+
+.nav-page li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.nav-page ul {
+  text-align: center;
+}
+
+.nav-page a:hover {
+  font-weight: bold;
+}
+
+nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.nav-logo {
+  flex: auto;
+  text-align: left;
+}
+
+.nav-page a {
+  font-size: 1.3em;
+  font-weight: 400;
+  text-decoration: none;
+  color: #bd9354;
+  text-align: center;
+}
+
+.nav-logo img {
+  width: 60px;
+}
+
+.nav-text {
+  font-size: 2em;
+  padding-left: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #bd9354;
+  text-align: center;
+}
+
+.card {
+  width: auto;
+  box-shadow: 0 4px 8px 0 rgba(199, 163, 122, 0.664);
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top:30px;
+  color: #85603f;
+  /* display: inline-block; */
+}
+
+.cards {
+  width: auto;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #bd9354;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top:30px;
+  color: #85603f;
+}
+
+.artikel {
+  text-align: justify;
+  padding: 20px 50px;
+  color: white;
+  background-color: #85603f;
+}
+
+.profile header,
+.profile section {
+  color: white;
+  text-align: center;
+}
+
+.profile p {
+  font-size: 15px;
+}
+
+.profile img {
+  width: 100px;
+  text-align: center;
+}
+
+.profile {
+  text-align: center;
+  background-color: #9e7540;
+}
+
+aside {
+  float:right;
+  width: 25%;
+  /*flex: auto;*/
+  padding: 0 20px;
+  margin: 0;
+  border-radius: 0px;
+  text-align: center;
+}
+
+.home-left img {
+  padding-top: 50px;
+}
+
+.home-left {
+  flex: 1;
+  text-align: center;
+  background-image: url(/Project_Submission/assets/image/bottom.png);
+}
+
+.home-right {
+  flex: 1;
+  text-align: center;
+  color: #9e7540;
+}
+
+.home-right p {
+  font-size: 1.3em;
+  color: #9e7540;
+  padding: 0 30px 0 30px;
+}
+
+.subs {
+  width: 500px;
+  height: 50px;
+  border-color: #9e7540;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-subs:hover {
+ cursor: pointer;
+ background-color: #bd9354;
+}
+ .btn-subs {
+  width: 100px;
+  height: 30px;
+  border-style: none;
+  background-color: #85603f;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+}
+
+.featured-image {
+  width: 200px;
+  object-position: center;
+}
+
+.article-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+
+.card a {
+   text-decoration: none;
+   color: #9e7540;
+}
+
+.card a:hover {
+   font-weight: bold;
+   
+}
+
+.sosmed li {
+   display: inline;
+}
+
+.sosmed img {
+   width: 30px;
+}
+
+.sosmed img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #9e7540;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  #content,
+  aside,
+  .home-right,
+  .home-left {
+    width: 100%;
+    padding: 0;
+  }
+
+  #about {
+    width: 100%;
+    padding: 0 20px 0 20px;
+  }
+  .subs,
+  .home-left img,
+  .grid img,
+  .sosmed img {
+    max-width: 80%;
+  }
+  .nav-text {
+    font-size: 1.5em;
+  }
+
+  .nav-page a,
+  .grid {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,76 @@
+.testimoni-container {
+  position: relative;
+  background-image: url(background.jpg);
+  background-size: contain;
+}
+
+.myTesti {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #85603F;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+q {
+    color: white;
+    font-style: italic;}
+
+.myTesti img {
+ width: 200px;
+ }
+
+.author {
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    .myTesti img {
+        max-width: 80%;
+    }
+}
